@@ -6,15 +6,8 @@ jobs:
   test:
     name: Test whether all files compile
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/typst/typst:latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: cachix/install-nix-action/@v22
-        with:
-          nix_path: nixpkgs=channel:nixos-unstable
-      - run: nix-build
-
-      - name: "install typst"
-        run: nix-shell -p typst
-
       - name: "compile SarfTable"
         run: typst compile SarfTable.typ
