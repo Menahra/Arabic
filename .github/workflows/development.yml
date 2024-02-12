@@ -10,6 +10,6 @@ jobs:
       image: ghcr.io/typst/typst:latest
     steps:
       - name: "list files"
-        run: ls -al
+        run: pwd
       - name: "compile SarfTable"
         run: typst compile SarfTable.typ
