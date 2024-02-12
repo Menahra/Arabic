@@ -9,5 +9,7 @@ jobs:
     container:
       image: ghcr.io/typst/typst:latest
     steps:
+      - name: "list files"
+        run: ls -al
       - name: "compile SarfTable"
         run: typst compile SarfTable.typ
