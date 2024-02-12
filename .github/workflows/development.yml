@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "install typst"
-        run: apt-get install -y typst
+        run: sudo apt-get install -y typst
 
       - name: "compile SarfTable"
         run: typst compile SarfTable.typ
