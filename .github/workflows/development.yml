@@ -9,7 +9,8 @@ jobs:
     container:
       image: ghcr.io/typst/typst:latest
     steps:
-      - name: "list files"
-        run: pwd
+      - name: "checkout repository"
+        uses: actions/checkout@v3
+
       - name: "compile SarfTable"
         run: typst compile SarfTable.typ
