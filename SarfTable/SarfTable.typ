@@ -1,4 +1,9 @@
-#import "utils.typ": concealedText, columnGutter, rowGutter;
+#import "../utils.typ": concealedText, columnGutter, rowGutter;
+
+#let titleTextSize = 20pt
+#let concealedTextSize = 11pt
+#let normalTextSize = 18pt
+#let captionTextSize = 9pt
 
 #let SarfTable(
   familyName: str,

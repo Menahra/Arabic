@@ -7,6 +7,6 @@
   normalTextSize,
   grayTextSize
 ) = {
-  text(grayPartTextSize, gray)[#grayPart ]
-  text(normalPartTextSize)[#normalPart]
+  text(grayTextSize, gray)[#grayText ]
+  text(normalTextSize)[#normalText]
 };
