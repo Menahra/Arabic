@@ -1,0 +1,14 @@
+name: development
+
+on: push
+
+jobs:
+  test:
+    name: Test whether all files compile
+    runs-on: ubuntu-latest
+    steps:
+      - name: "install typst"
+        run: apt-get install -y typst
+
+      - name: "compile SarfTable"
+        run: typst compile SarfTable.typ
