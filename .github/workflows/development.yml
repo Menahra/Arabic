@@ -12,5 +12,5 @@ jobs:
       - name: "checkout repository"
         uses: actions/checkout@v3
 
-      - name: "compile SarfTable"
-        run: typst compile SarfTable.typ
+      - name: "test SarfTable"
+        run: typst compile tests/SarfTableTest.typ --root .
