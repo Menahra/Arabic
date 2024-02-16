@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v3
 
       - name: "test SarfTable"
-        run: typst compile tests/SarfTableTest.typ --root .
+        run: typst compile Sarf/SarfTableTest.typ --root .

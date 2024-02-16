@@ -1,4 +1,4 @@
-#import "../SarfTable.typ": SarfTable
+#import "SarfTable.typ": SarfTable
 
 #show "AkhbaraSarfTable": document => SarfTable(
   familyName: "أَخْبَرَ",

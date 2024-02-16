@@ -1,4 +1,4 @@
-#import "utils.typ": concealedText, columnGutter, rowGutter;
+#import "../utils.typ": concealedText, columnGutter, rowGutter;
 
 #let titleTextSize = 20pt
 #let concealedTextSize = 11pt
