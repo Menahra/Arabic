@@ -1,6 +1,6 @@
 #import "SarfTable.typ": SarfTable
 
-#show "AkhbaraSarfTable": document => SarfTable(
+#show: document => SarfTable(
   familyName: "أَخْبَرَ",
   pastTense: "أَخْبَرَ",
   presentTense: "يُخْبِرُ",
@@ -13,4 +13,3 @@
   nehi: "لَا تُخْبِرْ",
   zharf: ("مُخْبَرٌ",),
 );
-AkhbaraSarfTable

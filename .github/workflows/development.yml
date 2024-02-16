@@ -12,5 +12,8 @@ jobs:
       - name: "checkout repository"
         uses: actions/checkout@v3
 
+      - name: "test Fil Conjugation"
+        run: typst compile Fi3l/Conjugation.typ --root .
+
       - name: "test SarfTable"
         run: typst compile Sarf/SarfTableTest.typ --root .
