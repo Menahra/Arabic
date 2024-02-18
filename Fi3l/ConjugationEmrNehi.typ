@@ -2,22 +2,26 @@
 #import "constants.typ": defaultConjugationTextSize, defaultConjugationConcealedTextSize;
 
 #let ConjugationEmrNehi(
-  secondPersonMasculineSingular: str,
-  secondPersonMasculineDual: str,
-  secondPersonMasculinePlural: str,
-  secondPersonFeminineSingular: str,
-  secondPersonFeminineDual: str,
-  secondPersonFemininePlural: str,
+  masculine: (
+    singular: str,
+    dual: str,
+    plural: str
+  ),
+  feminine: (
+    singular: str,
+    dual: str,
+    plural: str
+  ),
   normalTextSize: defaultConjugationTextSize,
   concealedTextSize: defaultConjugationConcealedTextSize,
 ) = {
   let gridContent = (
-    align(center, concealedText(secondPersonMasculinePlural, "أَنْتُمْ", normalTextSize, concealedTextSize)),
-    align(center, concealedText(secondPersonMasculineDual, "أَنْتُمَا", normalTextSize, concealedTextSize)),
-    align(center, concealedText(secondPersonMasculineSingular, "أَنْتَ", normalTextSize, concealedTextSize)),
-    align(center, concealedText(secondPersonFemininePlural, "أَنْتُنَّ", normalTextSize, concealedTextSize)),
-    align(center, concealedText(secondPersonFeminineDual, "أَنْتُمَا", normalTextSize, concealedTextSize)),
-    align(center, concealedText(secondPersonFeminineSingular, "أَنْتِ", normalTextSize, concealedTextSize)),
+    align(center, concealedText(masculine.plural, "أَنْتُمْ", normalTextSize, concealedTextSize)),
+    align(center, concealedText(masculine.dual, "أَنْتُمَا", normalTextSize, concealedTextSize)),
+    align(center, concealedText(masculine.singular, "أَنْتَ", normalTextSize, concealedTextSize)),
+    align(center, concealedText(feminine.plural, "أَنْتُنَّ", normalTextSize, concealedTextSize)),
+    align(center, concealedText(feminine.dual, "أَنْتُمَا", normalTextSize, concealedTextSize)),
+    align(center, concealedText(feminine.singular, "أَنْتِ", normalTextSize, concealedTextSize)),
   )
 
   grid(

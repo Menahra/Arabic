@@ -1,10 +1,14 @@
 #import "ConjugationEmrNehi.typ": ConjugationEmrNehi;
 
 #show: document => ConjugationEmrNehi(
-  secondPersonMasculineSingular: "أَخْبِرْ",
-  secondPersonMasculineDual: "أَخْبِرَا",
-  secondPersonMasculinePlural: "أَخْبِرُوا",
-  secondPersonFeminineSingular: "أَخْبِرِي",
-  secondPersonFeminineDual: "أَخْبِرَا",
-  secondPersonFemininePlural: "أَخْبِرْنَ",
+  masculine: (
+    singular: "أَخْبِرْ",
+    dual: "أَخْبِرَا",
+    plural: "أَخْبِرُوا",
+  ),
+  feminine: (
+    singular: "أَخْبِرِي",
+    dual: "أَخْبِرَا",
+    plural: "أَخْبِرْنَ",
+  ),
 );
