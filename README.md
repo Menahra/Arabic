@@ -9,6 +9,13 @@ Here you'll find various files which belong to فِعْل, such as
 - Conjugation
 - Conjugation for أَمْر/ نَهِي
 
+## Ism
+
+This contains numerous files which belons to اِسْم, such as
+
+- IsmChart
+  - used to display an overview of number/ status of an اِسْم for both genders
+
 ## Sarf
 
 This contains files to show various tables which are used to show sarf families. This includes

@@ -18,5 +18,8 @@ jobs:
       - name: "test Fil Conjugation for Emr and Nehi"
         run: typst compile Fi3l/ConjugationEmrNehiTest.typ --root .
 
+      - name: "test Ism Chart"
+        run: typst compile Ism/IsmChartTest.typ --root .
+
       - name: "test SarfTable"
         run: typst compile Sarf/SarfTableTest.typ --root .
