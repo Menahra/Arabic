@@ -21,5 +21,8 @@ jobs:
       - name: "test Ism Chart"
         run: typst compile Ism/IsmChartTest.typ --root .
 
+      - name: "test Ism Masdar/Zharf Chart"
+        run: typst compile Ism/MasdarZharfChartTest.typ --root .
+
       - name: "test SarfTable"
         run: typst compile Sarf/SarfTableTest.typ --root .
