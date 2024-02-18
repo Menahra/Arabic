@@ -15,6 +15,9 @@ This contains numerous files which belons to اِسْم, such as
 
 - IsmChart
   - used to display an overview of number/ status of an اِسْم for both genders
+- MasdarZharfChart
+  - used for اِسْم in which the plural form looks like the plural of the feminine version
+  - i.e. this is the case for مَصْدَر and ظَرْف
 
 ## Sarf
 
