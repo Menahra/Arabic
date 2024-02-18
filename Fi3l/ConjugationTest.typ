@@ -1,18 +1,32 @@
 #import "Conjugation.typ": Conjugation;
 
 #show: document => Conjugation(
-  thirdPersonMasculineSingular: "أَخْبَرَ",
-  thirdPersonMasculineDual: "أَخْبَرَا",
-  thirdPersonMasculinePlural: "أَخْبَرُوا",
-  thirdPersonFeminineSingular: "أَخْبَرَتْ",
-  thirdPersonFeminineDual: "أَخْبَرَتَا",
-  thirdPersonFemininePlural: "أَخْبَرْنَ",
-  secondPersonMasculineSingular: "أَخْبَرْتَ",
-  secondPersonMasculineDual: "أَخْبَرْتُمَا",
-  secondPersonMasculinePlural: "أَخْبَرْتُمْ",
-  secondPersonFeminineSingular: "أَخْبَرْتِ",
-  secondPersonFeminineDual: "أَخْبَرْتُمَا",
-  secondPersonFemininePlural: "أَخْبَرْتُنَّ",
-  firstPersonSingular: "أَخْبَرْتُ",
-  firstPersonPlural: "نَخْبَرْنَا",
+  thirdPerson: (
+    masculine: (
+      singular: "أَخْبَرَ",
+      dual: "أَخْبَرَا",
+      plural: "أَخْبَرُوا",
+    ),
+    feminine: (
+      singular: "أَخْبَرَتْ",
+      dual: "أَخْبَرَتَا",
+      plural: "أَخْبَرْنَ",
+    )
+  ),
+  secondPerson: (
+    masculine: (
+      singular: "أَخْبَرْتَ",
+      dual: "أَخْبَرْتُمَا",
+      plural: "أَخْبَرْتُمْ",
+    ),
+    feminine: (
+      singular: "أَخْبَرْتِ",
+      dual: "أَخْبَرْتُمَا",
+      plural: "أَخْبَرْتُنَّ",
+    )
+  ),
+  firstPerson: (
+    singular: "أَخْبَرْتُ",
+    plural: "نَخْبَرْنَا",
+  )
 );

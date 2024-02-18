@@ -2,39 +2,53 @@
 #import "constants.typ": defaultConjugationTextSize, defaultConjugationConcealedTextSize;
 
 #let Conjugation(
-  thirdPersonMasculineSingular: str,
-  thirdPersonMasculineDual: str,
-  thirdPersonMasculinePlural: str,
-  thirdPersonFeminineSingular: str,
-  thirdPersonFeminineDual: str,
-  thirdPersonFemininePlural: str,
-  secondPersonMasculineSingular: str,
-  secondPersonMasculineDual: str,
-  secondPersonMasculinePlural: str,
-  secondPersonFeminineSingular: str,
-  secondPersonFeminineDual: str,
-  secondPersonFemininePlural: str,
-  firstPersonSingular: str,
-  firstPersonPlural: str,
+  thirdPerson: (
+    masculine: (
+      singular: str,
+      dual: str,
+      plural: str,
+    ),
+    feminine: (
+      singular: str,
+      dual: str,
+      plural: str,
+    )
+  ),
+  secondPerson: (
+    masculine: (
+      singular: str,
+      dual: str,
+      plural: str,
+    ),
+    feminine: (
+      singular: str,
+      dual: str,
+      plural: str,
+    )
+  ),
+  firstPerson: (
+    singular: str,
+    plural: str
+  ),
   normalTextSize: defaultConjugationTextSize,
   concealedTextSize: defaultConjugationConcealedTextSize,
 ) = {
   let gridContent = (
-    align(center, concealedText(thirdPersonMasculinePlural, "هُمْ", normalTextSize, concealedTextSize)),
-    align(center, concealedText(thirdPersonMasculineDual, "هُمَا", normalTextSize, concealedTextSize)),
-    align(center, concealedText(thirdPersonMasculineSingular, "هَوَ", normalTextSize, concealedTextSize)),
-    align(center, concealedText(thirdPersonFemininePlural, "هُنَّ", normalTextSize, concealedTextSize)),
-    align(center, concealedText(thirdPersonFeminineDual, "هُمَا", normalTextSize, concealedTextSize)),
-    align(center, concealedText(thirdPersonFeminineSingular, "هِيَ", normalTextSize, concealedTextSize)),
-    align(center, concealedText(secondPersonMasculinePlural, "أَنْتُمْ", normalTextSize, concealedTextSize)),
-    align(center, concealedText(secondPersonMasculineDual, "أَنْتُمَا", normalTextSize, concealedTextSize)),
-    align(center, concealedText(secondPersonMasculineSingular, "أَنْتَ", normalTextSize, concealedTextSize)),
-    align(center, concealedText(secondPersonFemininePlural, "أَنْتُنَّ", normalTextSize, concealedTextSize)),
-    align(center, concealedText(secondPersonFeminineDual, "أَنْتُمَا", normalTextSize, concealedTextSize)),
-    align(center, concealedText(secondPersonFeminineSingular, "أَنْتِ", normalTextSize, concealedTextSize)),
+    align(center, concealedText(thirdPerson.masculine.plural, "هُمْ", normalTextSize, concealedTextSize)),
+    align(center, concealedText(thirdPerson.masculine.dual, "هُمَا", normalTextSize, concealedTextSize)),
+    align(center, concealedText(thirdPerson.masculine.singular, "هَوَ", normalTextSize, concealedTextSize)),
+    align(center, concealedText(thirdPerson.feminine.plural, "هُنَّ", normalTextSize, concealedTextSize)),
+    align(center, concealedText(thirdPerson.feminine.dual, "هُمَا", normalTextSize, concealedTextSize)),
+    align(center, concealedText(thirdPerson.feminine.singular, "هِيَ", normalTextSize, concealedTextSize)),
+    align(center, concealedText(secondPerson.masculine.plural, "أَنْتُمْ", normalTextSize, concealedTextSize)),
+    align(center, concealedText(secondPerson.masculine.dual, "أَنْتُمَا", normalTextSize, concealedTextSize)),
+    align(center, concealedText(secondPerson.masculine.singular, "أَنْتَ", normalTextSize, concealedTextSize)),
+    align(center, concealedText(secondPerson.feminine.plural, "أَنْتُنَّ", normalTextSize, concealedTextSize)),
+    align(center, concealedText(secondPerson.feminine.dual, "أَنْتُمَا", normalTextSize, concealedTextSize)),
+    align(center, concealedText(secondPerson.feminine.singular, "أَنْتِ", normalTextSize, concealedTextSize)),
     [],
-    align(center, concealedText(firstPersonPlural, "نَحْنُ", normalTextSize, concealedTextSize)),
-    align(center, concealedText(firstPersonSingular, "أَنَا", normalTextSize, concealedTextSize)),
+    align(center, concealedText(firstPerson.plural, "نَحْنُ", normalTextSize, concealedTextSize)),
+    align(center, concealedText(firstPerson.singular, "أَنَا", normalTextSize, concealedTextSize)),
   )
 
   grid(
