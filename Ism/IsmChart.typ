@@ -38,7 +38,6 @@
     ),
   ),
   textSize: 16pt,
-  titleSize: 18pt,
 ) = {
   grid(
     columns: (1fr, 1fr),
