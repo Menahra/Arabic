@@ -13,16 +13,16 @@ jobs:
         uses: actions/checkout@v3
 
       - name: "test Fil Conjugation"
-        run: typst compile Fi3l/ConjugationTest.typ --root .
+        run: typst compile helpers/Fi3l/ConjugationTest.typ --root .
 
       - name: "test Fil Conjugation for Emr and Nehi"
-        run: typst compile Fi3l/ConjugationEmrNehiTest.typ --root .
+        run: typst compile helpers/Fi3l/ConjugationEmrNehiTest.typ --root .
 
       - name: "test Ism Chart"
-        run: typst compile Ism/IsmChartTest.typ --root .
+        run: typst compile helpers/Ism/IsmChartTest.typ --root .
 
       - name: "test Ism Masdar/Zharf Chart"
-        run: typst compile Ism/MasdarZharfChartTest.typ --root .
+        run: typst compile helpers/Ism/MasdarZharfChartTest.typ --root .
 
       - name: "test SarfTable"
-        run: typst compile Sarf/SarfTableTest.typ --root .
+        run: typst compile helpers/Sarf/SarfTableTest.typ --root .
